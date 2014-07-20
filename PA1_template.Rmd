@@ -1,6 +1,6 @@
 # Activity Monitoring Dataset Analysis
 
-This is an analysis of the Activity Monitoring dataset provided by the Reproducible Research Coursera course offered by the John Hopkins Bloomberg Schools of Public Health. This dataset which was obtained from a personal device utilized by a single anonymous individual collected during the months of October and November of 2012. This data was collected at 5 minute intervals through out the day and includes the number of steps taken during each of these intervals. This analysis will look at the following four areas:
+This is an analysis of the Activity Monitoring dataset provided by the Reproducible Research Coursera course offered by the John Hopkins Bloomberg Schools of Public Health. This dataset measures daily activity levels and was obtained from a personal device utilized by a single anonymous individual collected during the months of October and November of 2012. This data was collected at 5 minute intervals through out the day and includes the number of steps taken during each of these intervals. This analysis will look at the following four areas:
 
 1. The mean total number of steps taken per day.
 2. The average daily activity pattern.
@@ -11,7 +11,7 @@ This is an analysis of the Activity Monitoring dataset provided by the Reproduci
 
 The first set of commands is to download the data file and load into the R programming environment. Also, two libraries are loaded which will be utilized throughout this analysis and the download date and session information are retained as well.
 
-*Important* : Before running any code, please be sure to set up to the intended working directory. Since the directory naming conventions differ across operating systems, this step should be run beforehand.
+*Important* : Before running any code, please be sure to set up to the intended working directory. Since the directory naming conventions differ across operating systems, the specific code is not included within this file. This step should be run beforehand.
 
 ```{r File Download and Load, echo=TRUE, results='asis' }
 
@@ -33,7 +33,7 @@ activity = read.csv("activity.csv")
 
 ## Part 2: Analysis of Total Steps Taken By Day
 
-The initial review of this data centers around the total number of steps taken for each day which is displayed in a histogram plot and the average and median values of the number of steps taken  
+The initial review of this data centers around the total number of steps taken for each day which is displayed in a histogram plot and the average and median values of the number of steps are calculated and reported.  
 
 ```{r Total Steps by Day, echo=TRUE, fig.height=12, fig.width=12}
 
